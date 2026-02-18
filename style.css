@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6; /* Gris muy claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* 2. Contenedor Principal */
+.contenedor {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* 3. Sección de Carga (Inputs y Botón) */
+.seccion-upload {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 2px dashed #dcdde1;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.seccion-upload:hover {
+    border-color: #3498db;
+}
+
+input[type="file"] {
+    width: 100%;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* 4. Mensajes de Estado */
+#mensaje {
+    margin-top: 1rem;
+    color: #3498db;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#MsgError {
+    margin-top: 1rem;
+    background-color: #fdf0f0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #e74c3c;
+    font-size: 0.9rem;
+}
+
+
+#Res {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+#Res h3 {
+    color: #27ae60;
+    margin-bottom: 1rem;
+}
+
+#imagenSubida {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+#urlImagen {
+    display: block;
+    word-break: break-all;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+#urlImagen:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practica Cloudinary</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Subir Imagen a Cloudinary</h1>
+        
+        <div class="seccion-upload">
+            <input type="file" id="InpSubir" accept="image/*">
+            <br><br>
+            <button id="btnCargar" onclick="subirImagen()">Subir Imagen</button>
+            
+            <p id="mensaje" style="display: none;">Subiendo...</p>
+        </div>
+
+        <div id="Res" style="display: none;">
+            <h3>Imagen subida!</h3>
+            <img id="imagenSubida" src="" alt="Imagen subida">
+            <p>URL: <a id="urlImagen"></a></p></div>
+
+        <p id="MsgError"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
